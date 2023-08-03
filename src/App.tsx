@@ -1,12 +1,13 @@
-import './App.css'
+import { AppProvider } from '@/providers/app';
+import { AppRoutes } from '@/routes';
 
 function App() {
-
   return (
-    <>
-      <h1>UniPlanner</h1>
-    </>
-  )
+    <AppProvider>
+      <AppRoutes />
+    </AppProvider>
+  );
 }
 
-export default App
+export default App;
+
