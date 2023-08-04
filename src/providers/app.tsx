@@ -6,7 +6,7 @@ type AppProviderProps = {
 export const AppProvider = ({ children }: AppProviderProps) => {
     return (
         <HelmetProvider>
-            <Router>{children}</Router>
+            <Router basename={import.meta.env.BASE_URL}>{children}</Router>
         </HelmetProvider>
     )
 }
