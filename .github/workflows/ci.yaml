@@ -2,7 +2,7 @@ name: deploy
 
 on:
   push:
-    baranches: ['main']
+    branches: ['main']
   workflow_dispatch:
 
 concurrency:
@@ -37,7 +37,7 @@ jobs:
       pages: write
       id-token: write
 
-    encironment:
+    environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.url }}
 
