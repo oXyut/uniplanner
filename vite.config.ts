@@ -5,7 +5,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.GITHUB_PAGES  // この行を追加
-  ? "reactailwind"            // この行を追加
+  ? "uniplanner-test"            // この行を追加
   : "./",                     // この行を追加
   plugins: [react(), tsconfigPaths()],
 })
