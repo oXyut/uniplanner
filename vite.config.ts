@@ -4,8 +4,8 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_PAGES  // この行を追加
-  ? "/uniplanner/"            // この行を追加
-  : "./",                     // この行を追加
+  base: process.env.GITHUB_PAGES
+  ? "/uniplanner/"
+  : "./",
   plugins: [react(), tsconfigPaths()],
 })
